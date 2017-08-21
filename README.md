@@ -1,7 +1,7 @@
 # CAEN for Docker
 
 ### Summary
-This repo contains the basic building blocks for a CAEN-like environment. In an effort to keep this image as lightweight as possible, this image only comes with:
+This [repo](https://github.com/dantespe/caen) contains the basic building blocks for a CAEN-like environment. In an effort to keep this image as lightweight as possible, this image only comes with:
 
 * `gcc`/`g++`
 * `python`
@@ -15,6 +15,7 @@ This image is not to be used as a "source of truth," but it is helpful for compi
 
 ### Tips:
 1. Mounting your class folders to `/src/` using `-v`:
+
     `docker run --name caen -dit -v /path/to/my/class/folders/:/src/ caen`
 
     This allows all changes to `/path/to/my/class/folders/` to be visible
